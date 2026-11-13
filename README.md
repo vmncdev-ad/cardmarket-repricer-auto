@@ -51,7 +51,7 @@ El margen es configurable. Estrategia elegida: ligeramente por encima del mínim
 ## Estructura del proyecto
 
 ```
-cardmarket-repricer/
+cardmarket-repricer-auto/
 ├── docker-compose.yml
 ├── calculator/        # descarga price guide + calcula precios
 ├── exporter/          # expone métricas para Prometheus
@@ -66,8 +66,8 @@ cardmarket-repricer/
 ## Uso
 
 ```bash
-git clone https://github.com/vmncdev-ad/cardmarket-repricer.git
-cd cardmarket-repricer
+git clone https://github.com/vmncdev-ad/cardmarket-repricer-auto.git
+cd cardmarket-repricer-auto
 docker compose up -d
 ```
 
