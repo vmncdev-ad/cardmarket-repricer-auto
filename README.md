@@ -71,8 +71,6 @@ cd cardmarket-repricer-auto
 docker compose up -d
 ```
 
-(Ajusta la URL si el repositorio tiene otro nombre.)
-
 ## Roadmap
 
 - [x] Diseño de arquitectura
@@ -87,4 +85,4 @@ docker compose up -d
 
 ## Aviso
 
-Proyecto personal. No afiliado a Cardmarket. No incluyas nunca tu stock ni credenciales en el repositorio.
+Proyecto personal. No afiliado a Cardmarket.
