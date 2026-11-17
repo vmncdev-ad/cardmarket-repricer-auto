@@ -24,7 +24,7 @@ La estrategia ha cambiado respecto a la idea inicial (mínimo del mercado + marg
 
 - **Precio de referencia:** el máximo de la media a 7 días (`avg7`) durante los últimos 14 días, usando la columna foil o no foil según la carta. Se usa `avg7` y no `avg1` porque `avg1` es la media de un solo día y una venta aislada dispara el valor.
 - **Histórico propio:** el price guide solo trae el momento actual, así que se guarda una foto diaria comprimida y el máximo se calcula sobre esas fotos. Mientras no haya 14 días acumulados, el resultado es una aproximación.
-- **Precio mínimo:** 0,02 €.
+- **Precio mínimo:** 0,50 €.
 - **Techo opcional (pendiente):** limitar el precio a un 5 % por debajo de la oferta más cara de otros vendedores de la misma carta. Ese dato no está en el price guide, así que de momento no se aplica.
 
 Limitaciones conocidas: el price guide no distingue el estado de la carta, y precios cercanos al máximo reciente pueden dejar cartas sin vender si hay copias más baratas.
