@@ -1,0 +1,6 @@
+services:
+  snapshot:
+    build: .
+    user: "${DOCKER_USER}"
+    volumes:
+      - ./data:/app/data
