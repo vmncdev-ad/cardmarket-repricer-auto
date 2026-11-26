@@ -1,6 +1,13 @@
+x-base: &base
+  build: .
+  image: cardmarket-repricer
+  user: "${DOCKER_USER}"
+  volumes:
+    - ./data:/app/data
+
 services:
   snapshot:
-    build: .
-    user: "${DOCKER_USER}"
-    volumes:
-      - ./data:/app/data
+    <<: *base
+  calc:
+    <<: *base
+    command: ["python", "calculator/calc.py"]
