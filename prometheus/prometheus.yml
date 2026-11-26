@@ -1,0 +1,7 @@
+global:
+  scrape_interval: 5m
+
+scrape_configs:
+  - job_name: cardmarket
+    static_configs:
+      - targets: ["exporter:8000"]
