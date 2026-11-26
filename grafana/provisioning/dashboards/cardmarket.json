@@ -9,7 +9,7 @@
   "version": 1,
   "refresh": "5m",
   "time": {
-    "from": "now-15d",
+    "from": "now-24h",
     "to": "now"
   },
   "panels": [
@@ -30,7 +30,8 @@
       "targets": [
         {
           "refId": "A",
-          "expr": "cardmarket_cartas{direccion=\"suben\"}"
+          "expr": "cardmarket_cartas{direccion=\"suben\"}",
+          "instant": true
         }
       ],
       "fieldConfig": {
@@ -72,7 +73,8 @@
       "targets": [
         {
           "refId": "A",
-          "expr": "cardmarket_cartas{direccion=\"bajan\"}"
+          "expr": "cardmarket_cartas{direccion=\"bajan\"}",
+          "instant": true
         }
       ],
       "fieldConfig": {
@@ -114,7 +116,8 @@
       "targets": [
         {
           "refId": "A",
-          "expr": "cardmarket_cartas{direccion=\"igual\"}"
+          "expr": "cardmarket_cartas{direccion=\"igual\"}",
+          "instant": true
         }
       ],
       "fieldConfig": {
@@ -156,7 +159,8 @@
       "targets": [
         {
           "refId": "A",
-          "expr": "cardmarket_foto_antiguedad_segundos"
+          "expr": "cardmarket_foto_antiguedad_segundos",
+          "instant": true
         }
       ],
       "fieldConfig": {
@@ -210,7 +214,8 @@
       "targets": [
         {
           "refId": "A",
-          "expr": "cardmarket_fotos_total"
+          "expr": "cardmarket_fotos_total",
+          "instant": true
         }
       ],
       "fieldConfig": {
