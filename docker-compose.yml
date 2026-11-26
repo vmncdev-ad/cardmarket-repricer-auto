@@ -11,3 +11,12 @@ services:
   calc:
     <<: *base
     command: ["python", "calculator/calc.py"]
+  exporter:
+    build: ./exporter
+    image: cardmarket-exporter
+    user: "${DOCKER_USER}"
+    volumes:
+      - ./data:/app/data:ro
+    ports:
+      - "127.0.0.1:8000:8000"
+    restart: unless-stopped
